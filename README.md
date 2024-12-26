@@ -1,6 +1,2 @@
-# Incredibox
-The latest source code for Incredibox (as of the V9 Update).
-
-This was ripped from the Mac application.
-
-Pump it up and chill.
+# Incredibox: Axe Boat 2.0
+A Port & a remake of that Zeroux version of Axe Boat / MFP
