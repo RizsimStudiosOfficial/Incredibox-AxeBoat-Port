@@ -1,0 +1,26 @@
+{
+  "name": "Incredibox: Axe Boat Port 1.0",
+  "short_name": "Incredibox: Axe Boat Port",
+  "description": "A mod port of axe boat with it being in v9 code base! (a remake from the zeroux's team version)",
+  "start_url": "../",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#FAFAFA",
+  "theme_color": "#FAFAFA",
+  "categories": ["mod", "axeboat", "mixforpeace", "2024"],
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "./touch-icon192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./touch-icon512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
