@@ -5567,91 +5567,70 @@ input[type="text"].invalid {
 }
 
 .gallery-container {
+    position: relative;
     width: 100%;
-    height: 100%;
-    padding: calc(var(--popup-scale) * 50px);
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+    width: 100%;
+  }
+  
+  .gallery-slide {
+    min-width: 100%;
+    box-sizing: border-box;
     text-align: center;
-}
-
-.gallery-slider {
-  display: flex;
-  transition: transform 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
-  width: 100%;
-}
-
-.gallery-slide {
-  min-width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-}
-
-.gallery-slide img {
-  width: 100%;
-  height: auto;
-}
-
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 10px;
-  cursor: pointer;
-  font-size: 18px;
-  z-index: 1000;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-}
-
-#credits-images {
-  width: 550px;
-  height: 350px;
-  border-radius: 10px;
-  margin: 10px;
-  pointer-events: none;
-}
-
-#ab-creditmod {
-  width: 330px;
-  height: 200px;
-  margin-top: 50px;
-  margin-left: -65px;
-  pointer-events: none;
-}
-
-#text-abcredits {
-  margin-top: 0;
-  margin-bottom: 10px;
-  white-space: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #5a5a5a;
-  cursor: default;
-}
-
-.darkmode #text-abcredits {
-  color: #888;
-}
-
-#text-credits {
-  margin-top: 0;
-  margin-bottom: 18px;
-  white-space: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #5a5a5a;
-  cursor: default;
-}
-
-.darkmode #text-credits {
-  color: #888;
-}
+  }
+  
+  .gallery-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev,
+  .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  #credits-images {
+    width: 550px;
+    height: 350px;
+    border-radius: 10px;
+    margin: 10px;
+    pointer-events: none;
+  }
+  
+  #text-credits {
+    margin-top: 0;
+    margin-bottom: 18px;
+    white-space: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #5a5a5a;
+    cursor: default;
+  }
+  
+  .darkmode #text-credits {
+    color: #888;
+  }
 
 #text-modcredits {
   margin-top: 0;
